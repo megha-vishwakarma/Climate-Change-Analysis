@@ -213,7 +213,7 @@ plt.savefig(f"./DataViz/Delhi/1980-2013Temp.jpeg") # To Save the Plot as an JPEG
 plt.show()
 ```
 <div>
-  <img src="/DataViz/Delhi/1980-2013Temp.jpeg" ></img>
+  <img src="/DataViz/1980-2013Temp.jpeg" ></img>
 </div>
 
 - For better analysis and getting more insight on trends and pattern of temperature change in the New Delhi
@@ -232,7 +232,7 @@ plt.savefig(f"./DataViz/Delhi/TemperatureChangeDelhi.png")
 plt.show()
 ```
 <div>
-  <img src="/DataViz/Delhi/TemperatureChangeDelhi.png" ></img>
+  <img src="/DataViz/TemperatureChangeDelhi.png" ></img>
 </div>
 
 **It is clearly visible through the plot that their exist a Temperature rise in month of May, June and July and the temperature descent in month of November and December**
@@ -248,7 +248,7 @@ plt.xticks([x for x in range(1,13)])
 plt.savefig(f"./DataViz/Delhi/AvgTempChangeMonth.png")
 plt.show()
 ```
-<div> <img src="/DataViz/Delhi/AvgTempChangeMonth.png" ></img></div>
+<div> <img src="/DataViz/AvgTempChangeMonth.png" ></img></div>
 
 - Yearly Average Temperature in Delhi
 
@@ -271,7 +271,7 @@ plt.xticks([x for x in range(1980,2012,2)])
 plt.savefig(f"./DataViz/Delhi/TempChangeVsRollingMean.png")
 plt.show()
 ```
-<div> <img src="/DataViz/Delhi/TempChangeVsRollingMean.png" ></img></div> 
+<div> <img src="/DataViz/TempChangeVsRollingMean.png" ></img></div> 
 
 ## Training and Evaluating using ADCF Statistical Testing
 
@@ -365,7 +365,7 @@ check_stationarity(df_train["Temp"])
 
 ```
 
-<div> <img src="/DataViz/Delhi/AdfullerTest.png" ></img></div>
+<div> <img src="/DataViz/AdfullerTest.png" ></img></div>
 
 ```python
 #Now we break the data into sub section
@@ -401,10 +401,10 @@ plt.tight_layout()
 ```
 
 <div>
- <img src="/DataViz/Delhi/Original.png" ></img>
- <img src="/DataViz/Delhi/Residual.png" ></img>
- <img src="/DataViz/Delhi/Seasonal.png" ></img>
- <img src="/DataViz/Delhi/Trend.png" ></img>
+ <img src="/DataViz/Original.png" ></img>
+ <img src="/DataViz/Residual.png" ></img>
+ <img src="/DataViz/Seasonal.png" ></img>
+ <img src="/DataViz/Trend.png" ></img>
 </div>
 
 Pandas dataframe.diff() is used to find the first discrete difference of objects over the given axis. We can provide a period value to shift for forming the difference.
@@ -425,4 +425,4 @@ check_stationarity(df_train['Temp'].diff(12).dropna())
 The Test Statistics is lower than the Critical Value of 5%.
 The serie seems to be stationary
 
-<div><img src="/DataViz/Delhi/Variation.png" ></img></div>
+<div><img src="/DataViz/Variation.png" ></img></div>
